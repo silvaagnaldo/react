@@ -16,7 +16,7 @@ import DiretaPai from "./components/comunicacao/DiretaPai"
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
 import Input from "./components/formulario/Input"
 import Contador from "./components/contador/Contador"
-
+import Mega from "./components/mega/Mega"
 
 export default function App() {
     return (
@@ -24,9 +24,12 @@ export default function App() {
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+                <Card titulo='#13 - Sorteio da Mega' color='#B9006E'>
+                    <Mega /> 
+                </Card>
 
                 <Card titulo='#12 - Contador' color='#424242'>
-                    <Contador numeroInicial={10}/>
+                    <Contador numeroInicial={10} />
                 </Card>
 
                 <Card titulo="#11 - Componente Controlado (Input)" color="#E45F56">
@@ -42,7 +45,7 @@ export default function App() {
                 </Card>
 
                 <Card titulo="#8 - Renderização Condicional" color="#982395">
-                    <ParOuImpar numero={33}/>
+                    <ParOuImpar numero={33} />
                     <Usuario usuario={{ nome: 'Fernando' }} />
                     {/*<Usuario usuario={{ email: 'Fer@nando.com' }} />
                     <Usuario /> */}
@@ -59,7 +62,7 @@ export default function App() {
                     <Familia sobrenome="Silva">
                         <FamiliaMembro nome="Agnaldo" />
                         <FamiliaMembro nome="Camila" />
-                        <FamiliaMembro nome="Paty"  />
+                        <FamiliaMembro nome="Paty" />
                     </Familia>
                 </Card>
 
