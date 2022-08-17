@@ -2,7 +2,7 @@ function Home(props) {
     return(
         <div className='Home'>
            <h1>Início</h1>
-           <p>Bem Vindo!</p>
+           <h2>Bem Vindo!</h2>
         </div>
     )
 }

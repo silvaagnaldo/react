@@ -1,9 +1,15 @@
 import './App.css'
+import { BrowserRouter } from 'react-router-dom'
+import Menu from '../components/layout/Menu'
+import Content from '../components/layout/Content'
 
 function App(props) {
     return(
         <div className='App'>
-           Componente App 
+            <BrowserRouter>
+                <Menu />
+                <Content />
+             </BrowserRouter>
         </div>
     )
 }
